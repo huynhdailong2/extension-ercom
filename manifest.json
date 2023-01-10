@@ -1,0 +1,141 @@
+{
+  "name": "Auto Insert/Update Data - Điện Máy Xanh Lộc Phúc version 2",
+  "description": "Auto Insert/Update Data - Điện Máy Xanh Lộc Phúc version 2",
+  "version": "0.0.2",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "css/style.css",
+        "plugins/*",
+        "js/*"
+      ],
+      "matches": [
+        "https://gara20.com/*",
+        "https://www.dienmayxanh.com/*",
+        "https://dienmaycholon.vn/*",
+        "https://tiki.vn/*",
+        "https://fptshop.com.vn/*",
+        "https://mediamart.vn/*",
+        "https://dienmaytamviet.com/*",
+        "https://www.nguyenkim.com/*",
+        "https://shopee.vn/*",
+        "https://avv.vn/*",
+        "http://omizu.com.vn/*",
+        "https://www.thegioididong.com/*",
+        "https://vender.vn/*",
+        "https://hafelevietnam.vn/*",
+        "https://cellphones.com.vn/*",
+        "https://khangluxury.vn/*",
+        "https://www.lazada.vn/*",
+        "https://www.sendo.vn/*",
+        "https://meta.vn/*",
+        "https://hoanghamobile.com/*",
+        "https://didongthongminh.vn/*",
+        "https://viettelstore.vn/*",
+        "https://donghohaitrieu.com/*",
+        "https://zshop.vn/*",
+        "https://bachlongmobile.com/*",
+        "https://www.hnammobile.com/*",
+        "https://noithathoaphat.com/*"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gara20.com/*",
+        "https://www.dienmayxanh.com/*",
+        "https://dienmaycholon.vn/*",
+        "https://tiki.vn/*",
+        "https://fptshop.com.vn/*",
+        "https://mediamart.vn/*",
+        "https://dienmaytamviet.com/*",
+        "https://www.nguyenkim.com/*",
+        "https://shopee.vn/*",
+        "https://avv.vn/*",
+        "http://omizu.com.vn/*",
+        "https://www.thegioididong.com/*",
+        "https://vender.vn/*",
+        "https://hafelevietnam.vn/*",
+        "https://cellphones.com.vn/*",
+        "https://khangluxury.vn/*",
+        "https://www.lazada.vn/*",
+        "https://www.sendo.vn/*",
+        "https://meta.vn/*",
+        "https://hoanghamobile.com/*",
+        "https://didongthongminh.vn/*",
+        "https://viettelstore.vn/*",
+        "https://donghohaitrieu.com/*",
+        "https://zshop.vn/*",
+        "https://bachlongmobile.com/*",
+        "https://www.hnammobile.com/*",
+        "https://noithathoaphat.com/*"
+      ],
+      "js": [
+        "plugins/jquery.js",
+        "content.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html",
+  "host_permissions": [
+    "*://www.dienmayxanh.com/*",
+    "*://gara20.com/*",
+    "*://dienmaycholon.vn/*",
+    "*://tiki.vn/*",
+    "*://fptshop.com.vn/*",
+    "*://mediamart.vn/*",
+    "*://dienmaytamviet.com/*",
+    "*://www.nguyenkim.com/*",
+    "*://shopee.vn/*",
+    "*://avv.vn/*",
+    "*://omizu.com.vn/*",
+    "*://www.thegioididong.com/*",
+    "*://vender.vn/*",
+    "*://hafelevietnam.vn/*",
+    "*://cellphones.com.vn/*",
+    "*://khangluxury.vn/*",
+    "*://www.lazada.vn/*",
+    "*://www.sendo.vn/*",
+    "*://meta.vn/*",
+    "*://hoanghamobile.com/*",
+    "*://didongthongminh.vn/*",
+    "*://viettelstore.vn/*",
+    "*://donghohaitrieu.com/*",
+    "*://zshop.vn/*",
+    "*://bachlongmobile.com/*",
+    "*://www.hnammobile.com/*",
+    "*://noithathoaphat.com/*"
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting",
+    "history",
+    "background",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/logo-16.png",
+      "32": "/images/logo-32.png",
+      "48": "/images/logo-48.png",
+      "128": "/images/logo-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo-16.png",
+    "32": "/images/logo-32.png",
+    "48": "/images/logo-48.png",
+    "128": "/images/logo-128.png"
+  }
+}

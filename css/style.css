@@ -1,0 +1,113 @@
+.icondetail-tickbuy {
+    background-image: url(https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Mobile/icon_chitiet@2x-min.png?v=2);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 180px;
+}
+.addProductBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    z-index: 9999;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+}
+.mk-product-content .mk-product-images a .addProductBtn{
+    top: -17px;
+    left: -16px;
+}
+.product-layout .product-block .image .addProductBtn{
+    background-color: red;
+}
+.listproduct .addProductBtn,
+.block-product__content .addProductBtn,
+.product-info .addProductBtn,
+.neon-product-block-item .addProductBtn{
+    top: 2px;
+    right: 2px;
+    left: unset;
+}
+.lSSlideOuter .img .addProductBtn{
+    right: -58px;    
+}
+.img .addProductBtn{
+    top: 5px;
+    right: -35px;
+    left: unset;
+}
+.sendProductBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    background-color: transparent;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+.sendProductBtn span{
+    position:absolute;
+    top:-10px;
+    left:38px;
+    background-color: #af4c4c;
+    color:#fff;
+    border-radius: 3px;
+    height: 20px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+.sendProductBtn button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.sendProductBtn ul{
+    position: absolute;
+    bottom: 0;
+    left: 37px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px #ccc;
+    min-width: 200px;
+    padding: 5px 10px;
+    list-style: none;
+}
+.sendProductBtn ul li {
+    border-top:1px solid #ccc;
+    cursor: pointer;
+}
+.sendProductBtn ul li:first-child {
+    border-top:none;
+}
+.sendProductBtn ul li:hover {
+    background-color: #e4e4e4;
+}
+.sendProductBtn:hover ul{
+    display: block;
+}
+.sendProductBtn:hover ul.hidden{
+    display: none;
+}
+.sendProductBtn .icondetail-tickbuy {
+    background-position: -74px -69px;
+    height: 38px;
+    width: 38px;
+}
